@@ -16,6 +16,7 @@ body {
 }
 .fas.fa-bars {
     font-size: 30px;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
