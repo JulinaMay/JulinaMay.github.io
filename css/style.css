@@ -14,6 +14,8 @@ body {
     width: 80%;
     margin: auto;
 }
+.fas.fa-bars {
+    font-size: 30px;
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -109,7 +111,9 @@ body {
 }
 .right-column img {
     float: center;
-    width: 50%;
+    min-width: 250px;
+    max-width: 100%;
+    height: auto;
     border-radius: 50px;
 }
 
@@ -124,7 +128,7 @@ span {
     color: #f14a60;
 }
 .left-column p {
-    font-size: 20px;
+    font-size: 18px;
     color: #999;
     margin: 50px 0;
 }
@@ -286,6 +290,9 @@ span {
     cursor: pointer;
     background: transparent;
     transition: transform 0.5s, background 0.5s;
+}
+.project-item p {
+    color: #999;
 }
 .project-item i {
     font-size: 40px;
