@@ -124,7 +124,7 @@ span {
     color: #f14a60;
 }
 .left-column p {
-    font-size: 14px;
+    font-size: 20px;
     color: #999;
     margin: 50px 0;
 }
@@ -282,7 +282,7 @@ span {
     text-align: center;
     padding: 25px 10px;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 16px;
     cursor: pointer;
     background: transparent;
     transition: transform 0.5s, background 0.5s;
@@ -363,4 +363,5 @@ form button {
 }
 .box p {
     text-align: left;
+    font-size: 18px;
 }
