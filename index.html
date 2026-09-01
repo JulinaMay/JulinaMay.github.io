@@ -1,71 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Home</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julina May | Software Developer & Data Scientist</title>
+    <meta name="description" content="Portfolio of Julina May - Computer Science Student, Software Developer, and Data Scientist specializing in healthcare innovation and web applications.">
     
+    <!-- CSS / Fonts / Icons -->
     <link rel="stylesheet" href="css/style.css">
-    <script src="scripts/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <div class="main-container">
-        <!-- Navbar -->
+
+    <!-- Navigation Bar -->
+    <header>
         <nav class="navbar">
-            <img src="../img/logo.png" alt="Logo">
-            <div class="menu-toggle" id="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="../about/">Over mij</a></li>
-                <li><a href="../skills/">Skills</a></li>
-                <li><a href="../projects/">Projects</a></li>
-                <li><a href="../contact/">Contact</a></li>
+            <a href="#hero" class="logo">Julina<span> May</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+    </header>
 
-        <!-- Banner Section -->
-        <div class="banner">
-            <div class="left-column">
-
-                <!-- Text Content -->
-                <h1>Port<span>folio</span></h1>
-                <h3>Bekijk hier delen van<span> mijn werk</span></h3>
-                <p>
-                    Hallo! Mijn naam is Julina Mercera, ik ben 21 jaar oud en ik ben momenteel bezig met mijn studie HBO Informatica.
-                    Naast mijn studie ben ik ook actief in het verbeteren van mijn vaardigheden door middel van het volgen van verschillende cursussen, projecten en samenwerking met anderen.
-                </p>
-                <p>
-                    <b>Wat doe ik?</b><br>
-                    Op deze website kun je meer te weten komen over mijn werk en projecten.
-                </p>
-                <p>
-                    <b>Wat kun je verwachten?</b><br>
-                    Mijn projecten: Hier vind je een overzicht van de projecten waaraan ik heb gewerkt, van applicaties tot websites, en alles daartussenin.<br>
-                    Mijn vaardigheden: Ik heb ervaring in verschillende programmeertalen zoals Python, JavaScript, en HTML/CSS, en werk ook regelmatig met frameworks zoals React en Bootstrap.<br>
-                    Mijn contactinformatie: Heb je vragen of wil je gewoon met mij in contact komen? Aarzel niet om een bericht achter te laten via het contactformulier.
-                </p>
-                
-                <!-- Buttons -->
-                <div class="btn">
-                    <a href="../about/"><button type="button" class="primary-btn">Meer over mij</button></a>
-                    <a href="img/julina mercera.pdf" target="_blank" rel="noopener noreferrer"><button type="button">CV</button></a>
-                </div>
-
-                <!-- Social Icons -->
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/julinamercera/" target="_blank" rel="noopener noreferrer"><img src="../img/linked.png" alt="LinkedIn"></a>
-                </div>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Hi, I'm <span class="highlight">Julina May</span></h1>
+            <h2>Software Developer & Data Scientist</h2>
+            <p>I bridge the gap between software engineering and data-driven insights. Passionate about building healthcare innovations and user-centric web applications.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary-btn">View My Work</a>
+                <a href="#contact" class="btn secondary-btn">Contact Me</a>
             </div>
-
-            <!-- Right Column with Image -->
-            <div class="right-column">
-                <img src="../img/headshotwithpink.png" alt="Julina Mercera">
+            <div class="social-links">
+                <a href="https://github.com/JulinaMay" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/julinamercera/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+            <h2 class="section-title">About Me</h2>
+            <p class="about-text">
+                I am a Computer Science student driven by transforming complex data and business requirements into intuitive, functional software. Whether analyzing sensor data to build predictive machine learning models for healthcare or developing data visualizations for municipalities, I focus on creating explainable, ethical, and practical tech solutions.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+            <div class="projects-grid">
+
+                <!-- Project 1: Rijndam Revalidatie -->
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-info">
+                        <span class="project-tag">Data Science & Healthcare</span>
+                        <h3>Digital Health Innovation — Rijndam Revalidatie</h3>
+                        <p>Developed a data-driven solution for stroke (CVA) outpatient rehabilitation. Processed Activ8 movement sensor data using Python to build predictive machine learning models and synthetic datasets. Integrated insights into an interactive Power BI dashboard for therapists to monitor patient recovery.</p>
+                        <div class="tech-tags">
+                            <span>Python</span>
+                            <span>scikit-learn</span>
+                            <span>Pandas</span>
+                            <span>Power BI</span>
+                            <span>Data Augmentation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: TSA Group Delft -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-info">
+                        <span class="project-tag">Full-Stack Development & UI/UX</span>
+                        <h3>Election Portal & Presentation Module — TSA Group Delft</h3>
+                        <p>Redesigned and implemented interactive data visualization modules for municipal election portals. Optimized front-end performance via asynchronous AJAX data fetching and engineered a solution to integrate remote interfaces directly into the portal, overcoming browser pop-up restrictions.</p>
+                        <div class="tech-tags">
+                            <span>PHP</span>
+                            <span>JavaScript</span>
+                            <span>HTML5 / CSS3</span>
+                            <span>AJAX</span>
+                            <span>MySQL</span>
+                            <span>UI/UX</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-info">
+                        <span class="project-tag">Desktop Software & UI/UX</span>
+                        <h3>Enterprise GUI Software — PTI</h3>
+                        <p>Designed and developed a Graphical User Interface (GUI) tailored for PTI to enhance employee workflow efficiency and optimize interaction with core software tools.</p>
+                        <div class="tech-tags">
+                            <span>Python</span>
+                            <span>GUI Development</span>
+                            <span>UI/UX</span>
+                            <span>Software Architecture</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-info">
+                        <span class="project-tag">Software Engineering</span>
+                        <h3>StarLight Cinema — CLI Application</h3>
+                        <p>Built a high-performance terminal-based application allowing users to search, filter, and manage movie databases with a focus on usability, clean code, and fast data lookup.</p>
+                        <div class="tech-tags">
+                            <span>Console Application</span>
+                            <span>Data Structures</span>
+                            <span>Object-Oriented Programming</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container" data-aos="fade-up">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Software & Web</h3>
+                    <ul>
+                        <li>PHP / MySQL</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>HTML5 & CSS3</li>
+                        <li>AJAX & REST APIs</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-brain"></i> Data & AI</h3>
+                    <ul>
+                        <li>Python (Pandas, Scikit-learn)</li>
+                        <li>Predictive Modeling</li>
+                        <li>Data Augmentation</li>
+                        <li>Power BI</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tasks"></i> Design & Process</h3>
+                    <ul>
+                        <li>UI/UX Prototyping</li>
+                        <li>Requirements Analysis</li>
+                        <li>Agile / Scrum</li>
+                        <li>Git / GitHub</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+            <h2 class="section-title">Get In Touch</h2>
+            <p>I'm always open to discussing new opportunities, collaborations, or technical projects. Feel free to reach out!</p>
+            <div class="contact-links">
+                <a href="mailto:julinamay_@hotmail.com" class="btn primary-btn"><i class="fas fa-envelope"></i> Send Email</a>
+                <a href="https://www.linkedin.com/in/julinamercera" target="_blank" class="btn secondary-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Julina May. Built with HTML, CSS, and JS.</p>
+    </footer>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+    <script src="script.js"></script>
 </body>
 </html>
